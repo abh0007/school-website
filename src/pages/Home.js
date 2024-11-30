@@ -30,7 +30,7 @@ const Home = () => {
   className="bg-cover bg-center text-black py-24 h-[60vh] flex items-center justify-center mt-10"
   style={{ backgroundImage: "url('./images/bg2.jpg')" }}
 >
-<div className="container mx-auto px-2 mt-0 flex items-center h-screen text-left">
+<div className="container mx-auto px-2 mt-0 flex h-screen items-center text-left">
   <div className="w-full">
     <h1 className="text-3xl sm:text-5xl font-bold mb-4 fade-in text-black font-serif">
      Welcome to  <span className="text-black-500">LBSSN

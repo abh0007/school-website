@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-green-900 text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
         {/* Quick Links Section */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
               <Link to="/" className="hover:underline">
@@ -58,16 +58,16 @@ const Footer = () => {
 
         {/* Contact Information */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-          <p className="mb-2">Lal Bahadur Shastri Siksha  Niketan</p>
-          <p className="mb-2">Rajeev Colony , Pilibhit</p>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">Contact Information</h3>
+          <p className="mb-2">Lal Bahadur Shastri Siksha Niketan</p>
+          <p className="mb-2">Rajeev Colony, Pilibhit</p>
           <p className="mb-2">Phone: +91 12345678</p>
           <p>Email: info@lbssn.edu.in</p>
         </div>
 
         {/* Social Media Links */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">Follow Us</h3>
           <ul className="space-y-2">
             <li>
               <a
@@ -114,8 +114,10 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="mt-8 text-center border-t border-gray-600 pt-4">
-        <p>&copy; {new Date().getFullYear()} LBSSN. All rights reserved.</p>
+      <div className="mt-8 text-center border-t border-gray-600 pt-4 px-4">
+        <p className="text-sm sm:text-base">
+          &copy; {new Date().getFullYear()} LBSSN. All rights reserved.
+        </p>
       </div>
     </footer>
   );
