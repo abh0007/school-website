@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-green-900 text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Quick Links Section */}
         <div>

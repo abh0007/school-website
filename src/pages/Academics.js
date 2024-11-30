@@ -126,7 +126,7 @@ const Academics = () => {
         </section>
   
         {/* Call-to-Action Section */}
-        <section className="bg-blue-500 text-white py-16 text-center">
+        <section className="bg-green-500 text-white py-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Join Our Academic Journey</h2>
           <p className="mb-6 text-lg">
             Unlock your potential at BHPS with a world-class education and
