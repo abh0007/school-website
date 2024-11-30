@@ -64,7 +64,7 @@ const Home = () => {
   <div className="container mx-auto px-4 text-center">
     <h2 className="text-3xl font-bold mb-6 fade-in">About Our School</h2>
     <p className="text-gray-700 mb-6 fade-in">
-      BHPS School has been a leader in education for over 25 years, dedicated to nurturing young minds with an innovative curriculum and a focus on holistic growth.
+      LBSSN School has been a leader in education for over 25 years, dedicated to nurturing young minds with an innovative curriculum and a focus on holistic growth.
     </p>
     <button className="bg-green-500 text-white py-2 px-6 rounded hover:bg-yellow-300 transition fade-in">
       Read More
@@ -106,7 +106,7 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 fade-in">Join Us Today</h2>
           <p className="text-lg mb-6 fade-in">
-            Enroll your child in BHPS School and provide them with a bright
+            Enroll your child in LBSSN School and provide them with a bright
             future.
           </p>
           <button className="bg-white text-blue-500 font-semibold py-2 px-6 rounded hover:bg-gray-100 transition fade-in" onClick={() => navigateTo("/contact")}>
