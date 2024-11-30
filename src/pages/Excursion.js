@@ -4,9 +4,9 @@ import React from 'react';
 const Excursion = () => {
   return (
     <div className="container mx-auto p-8 mt-10">
-      <h2 className="text-4xl font-bold mb-6">Excursions at BHPS</h2>
+      <h2 className="text-4xl font-bold mb-6">Excursions at LBSSN</h2>
       <p className="mb-6">
-        BHPS believes in providing holistic learning experiences. Our excursion program allows students to explore new places, 
+        LBSSN believes in providing holistic learning experiences. Our excursion program allows students to explore new places, 
         immerse themselves in nature, and engage in cultural activities outside the classroom.
       </p>
 

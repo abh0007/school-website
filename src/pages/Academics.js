@@ -3,7 +3,7 @@ const Academics = () => {
       <div className="bg-gray-50">
         {/* Page Header */}
         <header className="bg-green-500 text-white py-24 text-center mt-10">
-          <h1 className="text-4xl font-bold">Academics at BHPS</h1>
+          <h1 className="text-4xl font-bold">Academics at LBSSN</h1>
           <p className="mt-4 text-lg">
             Empowering students with knowledge, critical thinking, and a passion
             for lifelong learning.
@@ -129,7 +129,7 @@ const Academics = () => {
         <section className="bg-green-500 text-white py-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Join Our Academic Journey</h2>
           <p className="mb-6 text-lg">
-            Unlock your potential at BHPS with a world-class education and
+            Unlock your potential at LBSSN with a world-class education and
             opportunities.
           </p>
           <button className="bg-white text-blue-500 font-semibold py-2 px-6 rounded hover:bg-gray-100 transition">

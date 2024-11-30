@@ -107,7 +107,7 @@ const Infrastructure = () => {
   
         {/* Call-to-Action Section */}
         <section className="bg-green-500 text-white py-16 text-center">
-          <h2 className="text-3xl font-bold mb-4">Visit BHPS</h2>
+          <h2 className="text-3xl font-bold mb-4">Visit LBSSN</h2>
           <p className="mb-6 text-lg">
             Experience our world-class infrastructure firsthand. Schedule a visit
             today!

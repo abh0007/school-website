@@ -4,9 +4,9 @@ import React from 'react';
 const Sports = () => {
   return (
     <div className="container mx-auto p-8 mt-10">
-      <h2 className="text-4xl font-bold mb-6">Sports at BHPS</h2>
+      <h2 className="text-4xl font-bold mb-6">Sports at LBSSN</h2>
       <p className="mb-6">
-        Sports play an important role in the development of our students at BHPS. We believe in nurturing physical 
+        Sports play an important role in the development of our students at LBSSN. We believe in nurturing physical 
         fitness, teamwork, and a competitive spirit through various sporting activities throughout the year.
       </p>
 
@@ -21,7 +21,7 @@ const Sports = () => {
 
       <h3 className="text-3xl font-semibold mb-4">Sports Day Highlights:</h3>
       <p>
-        Every year, BHPS celebrates its annual Sports Day, where students compete in track and field events, relays,
+        Every year, LBSSN celebrates its annual Sports Day, where students compete in track and field events, relays,
         and team sports. The event is filled with energy and school spirit as students cheer for their teams.
       </p>
 

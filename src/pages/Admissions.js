@@ -4,16 +4,16 @@ import React from 'react';
 const Admissions = () => {
   return (
     <div className="container mx-auto p-8 mt-20">
-      <h2 className="text-4xl font-bold mb-6">Admissions at BHPS</h2>
+      <h2 className="text-4xl font-bold mb-6">Admissions at LBSSN</h2>
       <p className="mb-6">
-        Welcome to BHPS! We are excited to offer an enriching educational experience for your child. Our admission process is
+        Welcome to LBSSN! We are excited to offer an enriching educational experience for your child. Our admission process is
         designed to be straightforward and transparent. We believe in providing equal opportunities for all students to
         grow academically, socially, and emotionally. Below, you will find all the information you need to apply.
       </p>
 
       <h3 className="text-3xl font-semibold mb-4">Admission Process</h3>
       <p className="mb-6">
-        The admission process at BHPS involves the following steps:
+        The admission process at LBSSN involves the following steps:
       </p>
       <ul className="list-disc pl-8 mb-6">
         <li>Step 1: Fill out the online admission form.</li>
@@ -96,15 +96,15 @@ const Admissions = () => {
         Admissions Office:
       </p>
       <ul className="list-none pl-6 mb-6">
-        <li>Email: <a href="mailto:admissions@bhps.com" className="text-blue-500">admissions@bhps.com</a></li>
+        <li>Email: <a href="mailto:admissions@LBSSN.com" className="text-blue-500">admissions@LBSSN.com</a></li>
         <li>Phone: +91 123 456 7890</li>
-        <li>Address: BHPS, 123 School Street, City, State, ZIP</li>
+        <li>Address: LBSSN, 123 School Street, City, State, ZIP</li>
       </ul>
 
       <div className="mb-6">
         <h4 className="text-2xl font-semibold">Application Portal</h4>
         <a
-          href="https://bhps-application-portal.com"
+          href="https://LBSSN-application-portal.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 underline"

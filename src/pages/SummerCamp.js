@@ -4,9 +4,9 @@ import React from 'react';
 const SummerCamp = () => {
   return (
     <div className="container mx-auto p-8 mt-10">
-      <h2 className="text-4xl font-bold mb-6">Summer Camp at BHPS</h2>
+      <h2 className="text-4xl font-bold mb-6">Summer Camp at LBSSN</h2>
       <p className="mb-6">
-        BHPS Summer Camp offers a diverse set of activities designed to engage, challenge, and inspire students of all ages.
+        LBSSN Summer Camp offers a diverse set of activities designed to engage, challenge, and inspire students of all ages.
         Our summer camp focuses on fun-filled activities that promote physical fitness, creativity, and teamwork.
       </p>
       

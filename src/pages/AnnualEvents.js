@@ -4,9 +4,9 @@ import React from 'react';
 const AnnualEvents = () => {
   return (
     <div className="container mx-auto p-8 mt-10">
-      <h2 className="text-4xl font-bold mb-6">Annual Events at BHPS</h2>
+      <h2 className="text-4xl font-bold mb-6">Annual Events at LBSSN</h2>
       <p className="mb-6">
-        BHPS hosts a variety of exciting annual events that foster school spirit, showcase student talent, and build a
+        LBSSN hosts a variety of exciting annual events that foster school spirit, showcase student talent, and build a
         sense of community. From cultural performances to academic competitions, these events are highlights of the school year.
       </p>
 

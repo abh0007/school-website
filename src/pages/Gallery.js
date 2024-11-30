@@ -6,7 +6,7 @@ const Gallery = () => {
     <div className="container mx-auto p-8 mt-20">
       <h2 className="text-4xl font-bold mb-6 text-center">Gallery</h2>
       <p className="text-center mb-6">
-        Explore the various moments captured at BHPS, showcasing our school events, activities, and memories from the school year.
+        Explore the various moments captured at LBSSN, showcasing our school events, activities, and memories from the school year.
       </p>
 
       {/* Grid of Images */}
