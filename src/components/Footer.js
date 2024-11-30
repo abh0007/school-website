@@ -59,10 +59,10 @@ const Footer = () => {
         {/* Contact Information */}
         <div>
           <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-          <p className="mb-2">Bright Horizons Public School</p>
-          <p className="mb-2">123 Main Street, Your City</p>
-          <p className="mb-2">Phone: +91 12345 67890</p>
-          <p>Email: info@bhps.edu.in</p>
+          <p className="mb-2">Lal Bahadur Shastri Siksha  Niketan</p>
+          <p className="mb-2">Rajeev Colony , Pilibhit</p>
+          <p className="mb-2">Phone: +91 12345678</p>
+          <p>Email: info@lbssn.edu.in</p>
         </div>
 
         {/* Social Media Links */}
@@ -115,7 +115,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="mt-8 text-center border-t border-gray-600 pt-4">
-        <p>&copy; {new Date().getFullYear()} BHPS. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} LBSSN. All rights reserved.</p>
       </div>
     </footer>
   );

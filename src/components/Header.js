@@ -21,7 +21,7 @@ const Header = () => {
     <header className="bg-yellow-300 text-black p-4 fixed w-full top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold">BHPS</h1>
+        <h1 className="text-2xl font-bold">LBSSN</h1>
 
         {/* Mobile Menu Button */}
         <button
