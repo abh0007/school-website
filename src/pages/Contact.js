@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -9,36 +7,9 @@ const ContactUs = () => {
     email: "",
     phone: "",
     message: "",
-    date: null,
-    timeSlot: "",
-    timeZone: "UTC", // Default to UTC
   });
 
   const [status, setStatus] = useState("");
-
-  const timeZones = ["UTC", "GMT", "IST", "EST", "PST", "CST"];
-
-  // Generate 30-minute time slots for a working day (9:00 AM to 5:00 PM in UTC)
-  const generateTimeSlots = () => {
-    const slots = [];
-    const startHour = 9; // 9:00 AM
-    const endHour = 17; // 5:00 PM
-
-    for (let hour = startHour; hour < endHour; hour++) {
-      slots.push(`${hour}:00`, `${hour}:30`);
-    }
-    slots.push("17:00"); // Add the last slot
-    return slots.map((slot) => {
-      const [hours, minutes] = slot.split(":");
-      const timeLabel = new Date(Date.UTC(2023, 0, 1, hours, minutes)).toLocaleTimeString("en-US", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-        timeZone: formData.timeZone,
-      });
-      return { value: slot, label: timeLabel };
-    });
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,17 +19,11 @@ const ContactUs = () => {
     }));
   };
 
-  const handleDateChange = (date) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      date,
-    }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
+    // Replace these with your EmailJS IDs
     const serviceID = "service_letg0l6";
     const templateID = "template_uf6x32g";
     const publicKey = "Piekq47LlwdNXkKbE";
@@ -69,7 +34,7 @@ const ContactUs = () => {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setStatus("Message sent successfully!");
-          setFormData({ name: "", email: "", phone: "", message: "", date: null, timeSlot: "", timeZone: "UTC" });
+          setFormData({ name: "", email: "", phone: "", message: "" });
         },
         (error) => {
           console.log("FAILED...", error);
@@ -138,68 +103,6 @@ const ContactUs = () => {
             />
           </div>
 
-          {/* Date Picker */}
-          <div className="mb-4">
-            <label htmlFor="date" className="block text-lg font-medium text-gray-700">
-              Select Date
-            </label>
-            <DatePicker
-              selected={formData.date}
-              onChange={handleDateChange}
-              className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholderText="Select a date"
-              required
-            />
-          </div>
-
-          {/* Time Slot */}
-          <div className="mb-4">
-            <label htmlFor="timeSlot" className="block text-lg font-medium text-gray-700">
-              Select Time Slot
-            </label>
-            <select
-              id="timeSlot"
-              name="timeSlot"
-              value={formData.timeSlot}
-              onChange={handleChange}
-              className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            >
-              <option value="" disabled>
-                Choose a time slot
-              </option>
-              {generateTimeSlots().map((slot, index) => (
-                <option key={index} value={slot.value}>
-                  {slot.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Time Zone */}
-          <div className="mb-4">
-            <label htmlFor="timeZone" className="block text-lg font-medium text-gray-700">
-              Select Time Zone
-            </label>
-            <select
-              id="timeZone"
-              name="timeZone"
-              value={formData.timeZone}
-              onChange={handleChange}
-              className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            >
-              <option value="" disabled>
-                Choose a time zone
-              </option>
-              {timeZones.map((zone, index) => (
-                <option key={index} value={zone}>
-                  {zone}
-                </option>
-              ))}
-            </select>
-          </div>
-
           {/* Message Field */}
           <div className="mb-4">
             <label htmlFor="message" className="block text-lg font-medium text-gray-700">
@@ -212,7 +115,7 @@ const ContactUs = () => {
               onChange={handleChange}
               className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               rows="5"
-             
+              required
             />
           </div>
 
@@ -220,7 +123,7 @@ const ContactUs = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="px-6 py-2 bg-yellow-300 text-white rounded-lg hover:bg-yellow-500 transition duration-300"
+              className="px-6 py-2 bg-yellow-300 text-white-5000 rounded-lg hover:bg-yellow-500 transition duration-300"
             >
               Send Message
             </button>
@@ -231,6 +134,22 @@ const ContactUs = () => {
         {status && (
           <p className="mt-4 text-center text-lg font-semibold text-blue-500">{status}</p>
         )}
+      </div>
+      <div className="mt-12 text-center">
+        <h3 className="text-2xl font-semibold text-gray-700">Contact Information</h3>
+        <p className="mt-4 text-lg text-gray-600">Feel free to contact us using the following details:</p>
+
+        <div className="mt-6">
+          <p className="text-lg text-gray-600">
+            <strong>Email:</strong> contact@bhpsschool.com
+          </p>
+          <p className="text-lg text-gray-600">
+            <strong>Phone:</strong> +91 123 456 7890
+          </p>
+          <p className="text-lg text-gray-600">
+            <strong>Address:</strong> 123 School Road, BHPS Town, India
+          </p>
+        </div>
       </div>
     </div>
   );
