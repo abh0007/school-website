@@ -39,22 +39,22 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4 md:p-0">
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/")}>
                 Home
               </button>
             </li>
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/about")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/about")}>
                 About Us
               </button>
             </li>
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/academics")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/academics")}>
                 Academics
               </button>
             </li>
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/infrastructure")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/infrastructure")}>
                 Infrastructure
               </button>
             </li>
@@ -62,7 +62,7 @@ const Header = () => {
             {/* Achievements Dropdown */}
             <li className="relative">
               <button
-                className="hover:underline"
+                className="hover:text-sky-500"
                 onClick={() => toggleDropdown("achievements")}
               >
                 Achievements
@@ -109,7 +109,7 @@ const Header = () => {
             {/* Events Dropdown */}
             <li className="relative">
               <button
-                className="hover:underline"
+                className="hover:text-sky-500"
                 onClick={() => toggleDropdown("events")}
               >
                 Events
@@ -165,17 +165,17 @@ const Header = () => {
             </li>
 
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/admissions")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/admissions")}>
                 Admissions
               </button>
             </li>
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/gallery")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/gallery")}>
                 Gallery
               </button>
             </li>
             <li>
-              <button className="hover:underline" onClick={() => navigateTo("/contact")}>
+              <button className="hover:text-sky-500" onClick={() => navigateTo("/contact")}>
                 Contact Us
               </button>
             </li>
